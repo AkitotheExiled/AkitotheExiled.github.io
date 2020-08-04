@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>michaelguest.com</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .infoText {
+        text-align: center;
+        }
+
+        .ptitle {
+        margin: 5%;
+        font-weight: bold;
+        text-align:center;
+        }
+    </style>
+
+</head>
+<body>
+<div class="mainContainer">
+<div class="navBar">
+    <div class="dropdown mobile-visible">
+        <div id="menuMobile">
+    <div id="menuIcon" onclick="myFunction()" class="dropbtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html" class="project_link">Home</a>
+            <a href="#projects" class="project_link">Work</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    </div>
+    <div class="navMenu desktop-visible">
+    <ul class="navMenu desktop-visible">
+        <li id="name"><a href="index.html">Michael Guest</a></li>
+        <li id="works"><a href="index.html" class="project_link">Work</a></li>
+        <li id="about"><a href="#">About</a></li>
+    </ul>
+    </div>
+</div>
+    <div class="infoBG"></div>
+<div class="infoText">
+    <p class="ptitle">PlaylistBot</p>
+    <p class="pdesc">A script that scrapes /r/musicforpeople that can play a single track, and range of tracks through the command line using Selenium to automate playing of songs and skipping ads on Youtube.</p>
+    <div class="codelang">
+        <p>Languages:</p>
+        <ul>
+            <li><div class="card-container">Python</div></li>
+        </ul>
+    </div>
+    <a href="https://github.com/AkitotheExiled/Playlistbot" class="card_button">View code</a>
+</div>
+
+    </div>
+    <script>
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+</body>
+</html>

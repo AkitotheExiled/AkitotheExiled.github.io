@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>michaelguest.com</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="mainContainer">
+<div class="navBar">
+    <div class="dropdown mobile-visible">
+        <div id="menuMobile">
+    <div id="menuIcon" onclick="myFunction()" class="dropbtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html" class="project_link">Home</a>
+            <a href="#projects" class="project_link">Work</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    </div>
+    <div class="navMenu desktop-visible">
+    <ul class="navMenu desktop-visible">
+        <li id="name"><a href="index.html">Michael Guest</a></li>
+        <li id="works"><a href="#projects" class="project_link">Work</a></li>
+        <li id="about"><a href="#">About</a></li>
+    </ul>
+    </div>
+</div>
+    <div id="space1"> </div>
+    <div class="infoBG"></div>
+<div class="infoText">
+    <h2>Hello,</h2>
+    <p>My name is Michael. I am a web developer / automator living in California.</p>
+</div>
+    <div id="space2"> </div>
+    <div id="projects">
+<div class="project">
+    <div class="image_container">
+    <img src="nopreview.png" class="desktop-visible" alt="Ghilbli Webapp" >
+        <a href="ghilbliwebapp.html" class="mobile-visible"><img src="nopreview.png" class="" alt="Ghilbli Webapp" ></a>
+
+    <div class="after desktop-visible">
+        <p class="ptitle">Ghilbli Facts Webapp</p>
+        <a href="ghilbliwebapp.html" class="card_button">Learn more</a>
+    </div>
+
+        </div>
+</div>
+    <div class="project2">
+    <div class="image_container">
+<a href="playlistbot.html" class="mobile-visible"><img src="playlistbot.png" alt="Feedback Bot"></a>
+        <img src="playlistbot.png" class="desktop-visible" alt="Feedback Bot">
+        <div class="after desktop-visible">
+            <p class="ptitle">Playlist Bot</p>
+            <a href="playlistbot.html" class="card_button">Learn more</a>
+        </div>
+</div>
+        </div>
+            <div class="project3">
+    <div class="image_container">
+<a href="rssreplybot.html" class="mobile-visible"><img src="rssreplybot.png" alt="rssreply Bot"></a>
+        <img src="rssreplybot.png" class="desktop-visible" alt="rssreply Bot">
+        <div class="after desktop-visible">
+            <p class="ptitle">RSSReply Bot</p>
+            <a href="rssreplybot.html" class="card_button">Learn more</a>
+        </div>
+</div>
+        </div>
+            <div class="project4">
+    <div class="image_container">
+<img src="feedbackbot.png" class="desktop-visible" alt="Feedback Bot" >
+        <a href="feedbacktracker.html" class="mobile-visible"><img src="feedbackbot.png" class="" alt="Feedback Bot" ></a>
+
+    <div class="after desktop-visible">
+        <p class="ptitle">FeedbackTracker Bot</p>
+        <a href="feedbacktracker.html" class="card_button">Learn more</a>
+    </div>
+</div>
+        </div>
+        </div>
+
+        </div>
+    </div>
+    <script>
+    myProjects = document.getElementsByClassName("project_link");
+    console.log(myProjects);
+    myProjects.onclick = function() {
+    projects = document.getElementById("projects");
+    projects.scrollIntoView({behavior: "smooth"});
+    };
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+</body>
+</html>
